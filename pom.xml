@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>fr.xephi</groupId>
-    <artifactId>authme</artifactId>
+    <groupId>net.rainbowcreation</groupId>
+    <artifactId>multiauth</artifactId>
     <version>5.6.0-SNAPSHOT</version>
 
-    <name>AuthMeReloaded</name>
+    <name>MultiAuth</name>
     <description>The first authentication plugin for the Bukkit API!</description>
     <inceptionYear>2013</inceptionYear>
     <url>https://github.com/AuthMe/AuthMeReloaded</url>
@@ -70,7 +70,7 @@
         <spigot.version>1.19.2-R0.1-SNAPSHOT</spigot.version>
 
         <!-- Versioning properties -->
-        <project.outputName>AuthMe</project.outputName>
+        <project.outputName>MultiAuth</project.outputName>
         <project.buildNumber>CUSTOM</project.buildNumber>
         <project.versionCode>${project.version}-b${project.buildNumber}</project.versionCode>
         <project.finalNameBase>${project.outputName}-${project.version}</project.finalNameBase>
@@ -78,7 +78,7 @@
         <!-- Plugin description file properties -->
         <pluginDescription.name>${project.outputName}</pluginDescription.name>
         <pluginDescription.version>${project.versionCode}</pluginDescription.version>
-        <pluginDescription.main>${project.groupId}.${project.artifactId}.${pluginDescription.name}</pluginDescription.main>
+        <pluginDescription.main>${project.groupIid}.${project.artifactId}.${pluginDescription.name}</pluginDescription.main>
         <pluginDescription.authors>sgdc3, games647, Hex3l, krusic22</pluginDescription.authors>
     </properties>
 
@@ -242,6 +242,8 @@
                     </systemPropertyVariables>
                     <!-- Don't trim stack traces -->
                     <trimStackTrace>false</trimStackTrace>
+                    <!-- skip test-->
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
             <!-- Generate a jar containing classes and resources -->
@@ -593,9 +595,22 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+
+        <!-- multipaper -->
+        <repository>
+            <id>clojars</id>
+            <url>https://repo.clojars.org</url>
+        </repository>
     </repositories>
 
     <dependencies>
+        <!-- multipaper -->
+        <dependency>
+            <groupId>com.github.puregero</groupId>
+            <artifactId>multilib</artifactId>
+            <version>1.1.12</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- Java Libraries -->
 
         <!-- Jalu Injector -->

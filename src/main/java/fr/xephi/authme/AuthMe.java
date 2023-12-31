@@ -53,7 +53,7 @@ import static fr.xephi.authme.util.Utils.isClassLoaded;
 public class AuthMe extends JavaPlugin {
 
     // Constants
-    private static final String PLUGIN_NAME = "AuthMeReloaded";
+    private static final String PLUGIN_NAME = "MultiAuth";
     private static final String LOG_FILENAME = "authme.log";
     private static final int CLEANUP_INTERVAL = 5 * TICKS_PER_MINUTE;
 
