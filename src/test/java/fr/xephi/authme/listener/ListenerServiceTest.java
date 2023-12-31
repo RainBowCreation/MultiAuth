@@ -58,7 +58,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -72,7 +71,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -89,7 +87,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -108,7 +105,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(true));
@@ -130,7 +126,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -149,7 +144,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -167,7 +161,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -185,7 +178,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -200,7 +192,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(event);
-        result =false; // skip test
 
         // then
         assertThat(result, equalTo(false));
@@ -215,7 +206,6 @@ public class ListenerServiceTest {
 
         // when
         boolean result = listenerService.shouldCancelEvent(player);
-        result =true; // skip test
 
         // then
         assertThat(result, equalTo(true));

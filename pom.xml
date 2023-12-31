@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.rainbowcreation</groupId>
-    <artifactId>multiauth</artifactId>
+    <groupId>fr.xephi</groupId>
+    <artifactId>authme</artifactId>
     <version>5.6.0-SNAPSHOT</version>
 
-    <name>MultiAuth</name>
+    <name>AuthMeReloaded</name>
     <description>The first authentication plugin for the Bukkit API!</description>
     <inceptionYear>2013</inceptionYear>
     <url>https://github.com/AuthMe/AuthMeReloaded</url>
@@ -78,7 +78,7 @@
         <!-- Plugin description file properties -->
         <pluginDescription.name>${project.outputName}</pluginDescription.name>
         <pluginDescription.version>${project.versionCode}</pluginDescription.version>
-        <pluginDescription.main>${project.groupIid}.${project.artifactId}.${pluginDescription.name}</pluginDescription.main>
+        <pluginDescription.main>fr.xephi.authme.AuthMe</pluginDescription.main>
         <pluginDescription.authors>sgdc3, games647, Hex3l, krusic22</pluginDescription.authors>
     </properties>
 
